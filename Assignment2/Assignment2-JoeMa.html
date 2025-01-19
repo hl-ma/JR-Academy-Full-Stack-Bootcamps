@@ -1,11 +1,226 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Assignment2</title>
+    <style>
+      body {
+        font-family: "Poppins", sans-serif;
+      }
+
+      .inline-card-container {
+        display: flex;
+        justify-content: center;
+        margin: 20px;
+      }
+
+      .UXResearch-card,
+      .Bootcamp-card {
+        color: white;
+        font-weight: lighter;
+        max-width: 320px;
+        padding: 35px 30px 60px;
+        margin: 10px;
+        border: 0px transparent;
+        border-radius: 10px;
+      }
+
+      .UXResearch-card h3,
+      .Bootcamp-card h3 {
+        margin-bottom: 8px;
+        margin-top: 5px;
+        font-weight: bold;
+        font-size: 1.4rem;
+      }
+
+      .UXResearch-card p,
+      .Bootcamp-card p {
+        font-size: 0.7rem;
+        margin-bottom: 25px;
+        margin-top: 5px;
+        line-height: 1.2rem;
+      }
+
+      .UXResearch-card a,
+      .Bootcamp-card a {
+        padding: 12px 30px;
+        background: transparent;
+        color: white;
+        border: 1px solid white;
+        border-radius: 4px;
+        font-size: 0.6rem;
+        font-weight: normal;
+        text-decoration: none;
+      }
+
+      /* hover effect for Learn more button */
+      a:hover {
+        background: rgba(255, 255, 255, 0.299);
+      }
+
+      .UXResearch-card {
+        background: linear-gradient(
+            to Bottom Right,
+            rgb(86, 102, 239),
+            rgba(224, 166, 224, 0.7)
+          ),
+          url("https://images.unsplash.com/photo-1489110804417-276c3f517515?q=80&w=3570&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")
+            no-repeat center/cover;
+      }
+
+      .Bootcamp-card {
+        background: linear-gradient(
+            to Bottom Right,
+            rgb(38, 95, 253),
+            rgba(144, 250, 163, 0.7)
+          ),
+          url("https://images.unsplash.com/photo-1633113090205-cc1ac795b5f9?q=80&w=3570&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")
+            no-repeat center/cover;
+      }
+
+      .card-top-section {
+        display: flex;
+        margin-bottom: 20px;
+        align-items: center;
+        height: 45px;
+        max-width: 340px;
+      }
+
+      .card-top-section p {
+        margin: 0;
+        text-align: left;
+      }
+
+      .stars {
+        align-self: flex-start;
+        margin-left: auto;
+        font-size: 0.7rem;
+      }
+
+      .card-top-section .name {
+        font-size: 0.9rem;
+        margin-top: 4px;
+        margin-bottom: 8px;
+        font-weight: bold;
+      }
+
+        .card-top-section .position {
+            font-size: 0.7rem;
+            font-weight: lighter;
+        }
+
+      .left-name-card,
+      .right-name-card {
+        font-weight: lighter;
+        max-width: 340px;
+        max-height: 200px;
+        padding: 20px 20px 40px;
+        margin: 10px;
+        border: 0px transparent;
+        border-radius: 10px;
+        box-shadow: 5px 5px 200px lightgray;
+      }
+
+      .left-name-card img,
+      .right-name-card img {
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+        margin-right: 10px;
+        object-fit: cover;
+      }
+
+      .left-name-card p, .right-name-card p {
+        color: rgb(203, 203, 203);
+      }
+
+      .right-name-card {
+        color: white;
+        background: linear-gradient(
+            to Bottom Right,
+            rgb(81, 113, 240),
+            rgba(167, 98, 236, 0.7)
+          );
+      }
+
+      .description {
+        font-size: 0.75rem;
+        margin-bottom: 5px;
+        margin-top: 5px;
+        line-height: 1.2rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="inline-card-container">
+      <!-- UX Research Card -->
+      <div class="UXResearch-card">
+        <h3>UX Research</h3>
+        <p>
+          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+          nisi ut aliquip ex ea commodo consequat.
+        </p>
+        <a href="#" class="button">LEARN MORE</a>
+      </div>
+
+      <!-- Bootcamp Card -->
+      <div class="Bootcamp-card">
+        <h3>Bootcamp</h3>
+        <p>
+          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+          nisi ut aliquip ex ea commodo consequat.
+        </p>
+        <a href="#" class="button">LEARN MORE</a>
+      </div>
+    </div>
+
+    <div class="inline-card-container">
+      <!-- Left name card -->
+      <div class="left-name-card">
+        <div class="card-top-section">
+          <img
+            src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?q=80&w=3560&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt="Bobby Jennings"
+          />
+          <div>
+            <p class="name" style="color: black;">Bobby Jennings</p>
+            <p class="position">
+              Founder & CEO.
+              <span style="font-weight: bold; color: blue">Sketch App</span>
+            </p>
+          </div>
+          <div class="stars" style="color: rgb(214, 174, 42);">★★★★★</div>
+        </div>
+        <p class="description">
+          All users on MySpace will know that there are millions of people out
+          there. Every day besides so many people joining this community, there
+          are many others who will be looking out for friends.
+        </p>
+      </div>
+      <!-- Right name card -->
+      <div class="right-name-card">
+        <div class="card-top-section">
+          <img
+            src="https://images.unsplash.com/photo-1654110455429-cf322b40a906?q=80&w=3178&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt="Donald Bridges"
+          />
+          <div>
+            <p class="name" style="color: white;">Donald Bridges</p>
+            <p class="position">
+                Founder & CEO.
+                <span style="font-weight: bold; color: white;">Adobe</span>
+            </p>
+          </div>
+          <div class="stars">★★★★★</div>
+        </div>
+        <p class="description">
+          All users on MySpace will know that there are millions of people out
+          there. Every day besides so many people joining this community, there
+          are many others who will be looking out for friends.
+        </p>
+      </div>
+    </div>
+  </body>
 </html>
