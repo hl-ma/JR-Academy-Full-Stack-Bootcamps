@@ -1,47 +1,44 @@
-// 创建一个购物清单数组
-let shoppingList = ["牛奶", "鸡蛋", "面包"];
-console.log('原始清单', shoppingList);
+// Create a shopping list array
+const shoppingList = ["Milk", "Eggs", "Bread"];
+console.log('Original List:', shoppingList);
 
-// 向购物清单中添加两样物品，并输出更新后的清单。
-shoppingList.push("苹果", "橙子");
-console.log('添加后的清单', shoppingList);
+// Add two items to the shopping list and output the updated list
+shoppingList.push("Apples", "Oranges");
+console.log('Updated List:', shoppingList);
 
-// 从购物清单中删除最后一项物品，并输出结果。
+// Remove the last item from the shopping list and output the result
 shoppingList.pop();
-console.log('删除后的清单', shoppingList);
+console.log('List after removing last item:', shoppingList);
 
-// 创建一个函数，当购物清单中的物品超过5项时，在控制台输出"你的购物车满了"。
-console.log('购物清单数量检测：')
-let itemsNum = shoppingList.length;
-if (itemsNum > 5) {
-    console.log('你的购物车满了');
-} else{
-    console.log('你的购物车未满5项');
+// Create a function that outputs "Your cart is full" if the shopping list contains more than 5 items
+function checkShoppingList() {
+    return shoppingList.length > 5 ? 'Your cart is full' : 'Your cart has less than 5 items';
 }
+console.log(checkShoppingList());
 
-// 使用循环语句遍历购物清单，将每一项物品在控制台上以编号的形式输出。例如：
-console.log('购物清单：')
-// for
+// Use a loop to iterate through the shopping list and output each item with a number
+console.log('Shopping List:');
+// for loop
 for (let i = 0; i < shoppingList.length; i++) {
     console.log(i + 1, shoppingList[i]);
 }
-// foreach
+// forEach loop
 shoppingList.forEach((item, index) => {
-    console.log(`${index + 1}. &{item}`);
+    console.log(`${index + 1}. ${item}`);
 });
 
-// 创建一个函数，该函数接受物品名称作为参数，并返回该物品是否在购物清单中。
-console.log('检查物品是否在购物清单中：')
-function checkItem(itemName){
-    return shoppingList.includes(itemName) ? '是' : '否';
+// Create a function that takes an item name as a parameter and returns whether the item is in the shopping list
+console.log('Checking if an item is in the shopping list:')
+function checkItem(itemName) {
+    return shoppingList.includes(itemName) ? 'Yes' : 'No';
 }
-console.log('牛奶？', checkItem('牛奶'));
-console.log('西瓜？', checkItem('西瓜'));
+console.log('Milk?', checkItem('Milk'));
+console.log('Watermelon?', checkItem('Watermelon'));
 
-// 创建一个购物物品对象，其中包括物品名称、价格和数量。例如:
+// Create an object representing a shopping item, including name, price, and quantity
 let item = {
-    name: "牛奶",
+    name: "Milk",
     price: 2.5,
     quantity: 1
 };
-console.log('购物物品对象', item);
+console.log('Shopping Item Object:', item);
